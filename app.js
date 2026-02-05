@@ -4,7 +4,7 @@ const statusEl = document.getElementById("status");
 const resultEl = document.getElementById("result");
 
 // Your n8n Production Webhook URL
-const WEBHOOK_URL = "https://n8n.akshitpratiush.online/webhook/upload-resume";
+const WEBHOOK_URL = "https://n8n.akshitpratiush.online/webhook-test/read-resume";
 
 analyzeBtn.addEventListener("click", async () => {
   const file = fileInput.files[0];
