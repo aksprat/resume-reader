@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+#fileInput {
+  display: block;
+  margin: 20px 0;
+}
+
+button {
+  background: linear-gradient(135deg, #7c7cff, #a78bfa);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.result {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.placeholder {
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.placeholder-sub {
+  color: #9ca3af;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
