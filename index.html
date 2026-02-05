@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Reader - AI Interview Questions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📄 Resume Reader</h1>
+    <p>AI-powered interview questions</p>
+  </header>
+
+  <main class="container">
+    <!-- Left Pane -->
+    <div class="card">
+      <h2>Upload Resume</h2>
+      <p>Upload a candidate's resume to generate tailored interview questions.</p>
+
+      <input type="file" id="fileInput" accept=".pdf,.doc,.docx" />
+      <button id="analyzeBtn">✨ Analyze Resume</button>
+
+      <p id="status" class="status"></p>
+    </div>
+
+    <!-- Right Pane -->
+    <div class="card">
+      <h2>Interview Questions</h2>
+      <div id="result" class="result">
+        <p class="placeholder">No Resume Analyzed Yet</p>
+        <p class="placeholder-sub">
+          Upload a resume and click "Analyze Resume" to generate interview questions.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built with AI to help interviewers ask the right questions</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
