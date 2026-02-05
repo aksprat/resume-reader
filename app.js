@@ -31,7 +31,8 @@ analyzeBtn.addEventListener("click", async () => {
     }
 
     const data = await res.json();
-    console.log("Response:", data);
+    const text = data[0]?.choices?.[0]?.message?.content || "No output";
+    setQuestions(text);
 
     // Expecting: { questions: "...." }
     if (data.questions) {
